@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Andreynna Vieira | Especialista em Reabilitação Oral & Implantes em Goianésia - GO</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        roseGold: {
+                            50: '#fdfbfa',
+                            100: '#f9f3f0',
+                            200: '#f2e5e1',
+                            300: '#e4cdcb',
+                            400: '#d1aaab',
+                            500: '#b88486',
+                            600: '#a36d70',
+                            700: '#875659',
+                            800: '#70484b',
+                            900: '#5e3d40',
+                            950: '#321e20',
+                        },
+                        blush: {
+                            900: '#1c1516',
+                            950: '#120d0e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for minimal icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .lightbox-active { overflow: hidden; }
+    </style>
+</head>
+<body class="bg-blush-950 text-neutral-100 font-sans antialiased selection:bg-roseGold-500 selection:text-white">
+
+    <!-- HERO SECTION (Foto primeiro, depois título) -->
+    <header class="relative min-h-[90vh] flex items-center justify-center pt-12 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-blush-900 via-blush-950 to-blush-950">
+        <!-- Subtle background glow in rose gold / soft blush -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-roseGold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto w-full flex flex-col items-center text-center relative z-10 space-y-8">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-roseGold-500/10 border border-roseGold-500/20 text-roseGold-300 text-xs sm:text-sm font-medium tracking-wide">
+                <i class="fa-solid fa-gem text-xs"></i> Especialista em Reabilitação Oral & Implantes
+            </div>
+
+            <!-- Photo First -->
+            <div class="relative w-full max-w-sm sm:max-w-md mx-auto">
+                <div class="absolute -inset-1 bg-gradient-to-tr from-roseGold-500/40 to-transparent rounded-3xl blur-md"></div>
+                <div class="relative rounded-3xl overflow-hidden border border-roseGold-500/30 bg-blush-900 shadow-2xl aspect-[4/5]">
+                    <img src="https://i.imgur.com/caojLr8.jpeg" alt="Dra. Andreynna Vieira" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+
+            <!-- Title & Copy Second -->
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-[1.15]">
+                    Eu sou a <span class="text-transparent bg-clip-text bg-gradient-to-r from-roseGold-200 via-roseGold-400 to-roseGold-500">Dra. Andreynna Vieira</span>, Cirurgiã-Dentista em Goianésia.
+                </h1>
+
+                <p class="text-lg sm:text-xl text-neutral-300 font-light max-w-2xl mx-auto leading-relaxed">
+                    Transformo sorrisos e devolvo a sua autoestima com tratamentos humanizados, focados em estética natural, conforto absoluto e segurança em cada etapa.
+                </p>
+
+                <div class="pt-2 flex flex-col items-center gap-3">
+                    <a href="https://api.whatsapp.com/message/KN6JZHLQ73PFF1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-roseGold-500 to-roseGold-600 hover:from-roseGold-400 hover:to-roseGold-500 text-blush-950 font-bold px-8 py-4 rounded-xl shadow-xl shadow-roseGold-600/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 text-base sm:text-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Agendar primeira consulta no WhatsApp</span>
+                    </a>
+                    <div class="flex items-center gap-2 text-xs text-neutral-400">
+                        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>Resposta rápida • Atendimento humanizado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BLOCO “QUEM SOU EU” -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-blush-900/60 border-t border-roseGold-950">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <!-- Photo -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-sm rounded-2xl overflow-hidden border border-roseGold-900/50 shadow-xl bg-blush-900">
+                    <img src="https://i.imgur.com/E6Az6kC.png" alt="Dra. Andreynna Vieira no consultório" class="w-full h-auto object-cover aspect-[4/5]">
+                </div>
+            </div>
+
+            <!-- Text & Bullets -->
+            <div class="md:col-span-7 space-y-6">
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">
+                    Muito prazer, sou a <span class="text-roseGold-400">Dra. Andreynna</span>
+                </h2>
+                <p class="text-neutral-300 text-base sm:text-lg leading-relaxed font-light">
+                    Acredito que ir ao dentista deve ser uma experiência tranquila, acolhedora e segura. Minha missão é unir técnica avançada, materiais de altíssima qualidade e um atendimento genuinamente humano para que você volte a sorrir sem medo.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-blush-900/90 border border-roseGold-900/40">
+                        <div class="w-10 h-10 rounded-lg bg-roseGold-500/10 flex items-center justify-center text-roseGold-400 shrink-0 mt-0.5">
+                            <i class="fa-solid fa-tooth text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-1">Especialista em Reabilitação Oral & Implantes (IKO)</h3>
+                            <p class="text-sm text-neutral-400">Foco total em devolver função mastigatória completa e estética impecável ao seu sorriso.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-blush-900/90 border border-roseGold-900/40">
+                        <div class="w-10 h-10 rounded-lg bg-roseGold-500/10 flex items-center justify-center text-roseGold-400 shrink-0 mt-0.5">
+                            <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-1">Facetas de Porcelana Personalizadas</h3>
+                            <p class="text-sm text-neutral-400">Desenho de sorriso individualizado, preservando a saúde dental com laminados ultradelgados.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-blush-900/90 border border-roseGold-900/40">
+                        <div class="w-10 h-10 rounded-lg bg-roseGold-500/10 flex items-center justify-center text-roseGold-400 shrink-0 mt-0.5">
+                            <i class="fa-solid fa-hand-holding-heart text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-1">Atendimento humanizado e sem pressa</h3>
+                            <p class="text-sm text-neutral-400">Você participa ativamente das decisões do seu tratamento, entendendo cada passo com total clareza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO “RESULTADOS REAIS” (Galeria / Antes e Depois) -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-blush-950">
+        <div class="max-w-7xl mx-auto text-center space-y-4 mb-16">
+            <span class="text-roseGold-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">Transformações</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white">
+                Resultados Reais que Transformam Vidas
+            </h2>
+            <p class="text-neutral-400 max-w-2xl mx-auto text-sm sm:text-base">
+                Confira alguns dos sorrisos reabilitados com planejamento digital e execução de alta precisão em Goianésia - GO.
+            </p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Gallery Item 1 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-blush-900 border border-roseGold-900/30 aspect-[4/3] cursor-pointer shadow-lg" onclick="openLightbox(this)">
+                <img src="https://i.imgur.com/PiNWsFW.png" alt="Resultado de Reabilitação Oral" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-blush-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs text-roseGold-300 font-medium flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-blush-900 border border-roseGold-900/30 aspect-[4/3] cursor-pointer shadow-lg" onclick="openLightbox(this)">
+                <img src="https://i.imgur.com/QSwbj1a.png" alt="Resultado Facetas de Porcelana" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-blush-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs text-roseGold-300 font-medium flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-blush-900 border border-roseGold-900/30 aspect-[4/3] cursor-pointer shadow-lg" onclick="openLightbox(this)">
+                <img src="https://i.imgur.com/i8ylmkF.png" alt="Resultado Prótese sobre Implantes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-blush-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs text-roseGold-300 font-medium flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-blush-900 border border-roseGold-900/30 aspect-[4/3] cursor-pointer shadow-lg" onclick="openLightbox(this)">
+                <img src="https://i.imgur.com/v24oBrf.jpeg" alt="Sorriso Transformado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-blush-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs text-roseGold-300 font-medium flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-blush-900 border border-roseGold-900/30 aspect-[4/3] cursor-pointer shadow-lg" onclick="openLightbox(this)">
+                <img src="https://i.imgur.com/LpJFN1r.jpeg" alt="Detalhe de Facetas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-blush-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs text-roseGold-300 font-medium flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-blush-900 border border-roseGold-900/30 aspect-[4/3] cursor-pointer shadow-lg" onclick="openLightbox(this)">
+                <img src="https://i.imgur.com/vFD9Lxr.jpeg" alt="Reabilitação Oral Avançada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-blush-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs text-roseGold-300 font-medium flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-blush-900 border border-roseGold-900/30 aspect-[4/3] cursor-pointer shadow-lg" onclick="openLightbox(this)">
+                <img src="https://i.imgur.com/a1UKhU6.jpeg" alt="Sorriso Perfeito" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-blush-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <span class="text-xs text-roseGold-300 font-medium flex items-center gap-1.5"><i class="fa-solid fa-magnifying-glass-plus"></i> Clique para ampliar</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <p class="text-xs text-neutral-500 italic">*Resultados podem variar de pessoa para pessoa. Cada caso é avaliado individualmente após exames clínicos.</p>
+        </div>
+    </section>
+
+    <!-- BLOCO “POR QUE CONFIAR EM MIM?” -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-blush-900/40 border-t border-roseGold-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-roseGold-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">Diferenciais</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Por que confiar no meu atendimento?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-blush-900 border border-roseGold-900/40 hover:border-roseGold-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-roseGold-500/10 flex items-center justify-center text-roseGold-400 mb-6">
+                        <i class="fa-solid fa-scale-balanced text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Avaliação Honesta e Transparente</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Indico apenas o que é realmente necessário para a sua saúde e estética, sem procedimentos desnecessários.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-blush-900 border border-roseGold-900/40 hover:border-roseGold-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-roseGold-500/10 flex items-center justify-center text-roseGold-400 mb-6">
+                        <i class="fa-solid fa-user-doctor text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Atendimento Exclusivo Comigo</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Você não é apenas mais um número. Do planejamento ao pós-procedimento, o acompanhamento é feito pessoalmente por mim.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-blush-900 border border-roseGold-900/40 hover:border-roseGold-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-roseGold-500/10 flex items-center justify-center text-roseGold-400 mb-6">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Segurança e Materiais Premium</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Trabalho exclusivamente com porcelanas de alta tecnologia, implantes certificados e protocolos rigorosos de biossegurança.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-8 rounded-2xl bg-blush-900 border border-roseGold-900/40 hover:border-roseGold-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-roseGold-500/10 flex items-center justify-center text-roseGold-400 mb-6">
+                        <i class="fa-solid fa-comments text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clareza Absoluta de Custos e Prazos</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Orçamentos detalhados e facilidades explicadas com total clareza na primeira consulta.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="p-8 rounded-2xl bg-blush-900 border border-roseGold-900/40 hover:border-roseGold-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-roseGold-500/10 flex items-center justify-center text-roseGold-400 mb-6">
+                        <i class="fa-solid fa-face-smile text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Foco no Conforto e Zero Dor</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Técnicas modernas de anestesia e manejo clínico para garantir procedimentos tranquilos e sem traumas.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="p-8 rounded-2xl bg-blush-900 border border-roseGold-900/40 hover:border-roseGold-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-roseGold-500/10 flex items-center justify-center text-roseGold-400 mb-6">
+                        <i class="fa-solid fa-location-dot text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Localização Privilegiada em Goianésia</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Consultório moderno de fácil acesso na Av. Goiás, centro da cidade, preparado para o seu conforto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA INTERMEDIÁRIO -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blush-950 to-blush-900">
+        <div class="max-w-4xl mx-auto rounded-3xl bg-gradient-to-r from-roseGold-600/20 via-blush-900 to-roseGold-600/20 border border-roseGold-500/30 p-8 sm:p-12 text-center relative overflow-hidden shadow-2xl">
+            <div class="absolute -right-20 -top-20 w-60 h-60 bg-roseGold-500/10 rounded-full blur-2xl"></div>
+            <div class="relative z-10 space-y-6">
+                <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white">
+                    Pronta para dar o primeiro passo rumo ao seu novo sorriso?
+                </h2>
+                <p class="text-neutral-300 text-base max-w-xl mx-auto font-light">
+                    Não deixe para depois a confiança que você merece ter todos os dias. Fale conosco no WhatsApp.
+                </p>
+                <div class="pt-2">
+                    <a href="https://api.whatsapp.com/message/KN6JZHLQ73PFF1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-roseGold-500 to-roseGold-600 hover:from-roseGold-400 hover:to-roseGold-500 text-blush-950 font-bold px-8 py-4 rounded-xl shadow-xl shadow-roseGold-600/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 text-base sm:text-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Agendar primeira consulta no WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO “COMO FUNCIONA A PRIMEIRA CONSULTA” -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-blush-900/60">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-roseGold-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">Passo a Passo</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Como funciona o atendimento?</h2>
+                <p class="text-neutral-400 max-w-lg mx-auto text-sm sm:text-base">Um processo simples, rápido e transparente, pensado para o seu conforto.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="p-8 rounded-2xl bg-blush-900 border border-roseGold-900/40 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-roseGold-500 text-blush-950 font-bold text-lg flex items-center justify-center mx-auto mb-6 shadow-lg shadow-roseGold-500/20">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Toque no WhatsApp</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Você clica em qualquer botão do site para iniciar uma conversa rápida e sem burocracia com nossa equipe.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="p-8 rounded-2xl bg-blush-900 border border-roseGold-900/40 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-roseGold-500 text-blush-950 font-bold text-lg flex items-center justify-center mx-auto mb-6 shadow-lg shadow-roseGold-500/20">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Agendamento Fácil</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Escolhemos juntos o melhor dia e horário para a sua vinda ao consultório em Goianésia - GO.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="p-8 rounded-2xl bg-blush-900 border border-roseGold-900/40 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-roseGold-500 text-blush-950 font-bold text-lg flex items-center justify-center mx-auto mb-6 shadow-lg shadow-roseGold-500/20">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Avaliação Inicial</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Realizamos sua <strong class="text-roseGold-300 font-medium">primeira avaliação</strong>, ouvindo seus desejos e planejando seu caso com total clareza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCO “MAIS PROVAS” (Bastidores / Expert) -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-blush-950">
+        <div class="max-w-6xl mx-auto text-center space-y-4 mb-16">
+            <span class="text-roseGold-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">Bastidores</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Compromisso, Dedicação e Cuidado</h2>
+            <p class="text-neutral-400 max-w-xl mx-auto text-sm sm:text-base">Um pouco do nosso dia a dia no consultório para você se sentir em casa.</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="space-y-4">
+                <div class="rounded-2xl overflow-hidden border border-roseGold-900/40 bg-blush-900 aspect-[4/5] shadow-lg">
+                    <img src="https://i.imgur.com/E6Az6kC.png" alt="Atendimento personalizado" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <p class="text-center text-neutral-300 text-sm font-medium">Atendimento personalizado</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="space-y-4">
+                <div class="rounded-2xl overflow-hidden border border-roseGold-900/40 bg-blush-900 aspect-[4/5] shadow-lg">
+                    <img src="https://i.imgur.com/9puJTzJ.png" alt="Planejamento e tecnologia" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <p class="text-center text-neutral-300 text-sm font-medium">Planejamento e tecnologia</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="space-y-4">
+                <div class="rounded-2xl overflow-hidden border border-roseGold-900/40 bg-blush-900 aspect-[4/5] shadow-lg">
+                    <img src="https://i.imgur.com/kVLNYJl.png" alt="Ambiente acolhedor" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <p class="text-center text-neutral-300 text-sm font-medium">Ambiente acolhedor e seguro</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL (Decisão) -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-blush-900 via-blush-950 to-blush-950 border-t border-roseGold-950">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <span class="text-roseGold-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">Comece Agora</span>
+            <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white leading-tight">
+                Seu novo sorriso está a apenas um clique de distância.
+            </h2>
+            <p class="text-neutral-300 text-lg font-light max-w-2xl mx-auto">
+                Agende agora sua <strong class="text-roseGold-300 font-medium">primeira consulta</strong> em Goianésia - GO e descubra a excelência em reabilitação oral e implantes.
+            </p>
+            <div class="pt-4">
+                <a href="https://api.whatsapp.com/message/KN6JZHLQ73PFF1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-roseGold-500 to-roseGold-600 hover:from-roseGold-400 hover:to-roseGold-500 text-blush-950 font-bold px-8 py-4 rounded-xl shadow-xl shadow-roseGold-600/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 text-base sm:text-lg">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Agendar primeira consulta no WhatsApp</span>
+                </a>
+                <div class="mt-3 flex items-center justify-center gap-2 text-xs text-neutral-400">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span>Resposta rápida • Atendimento humanizado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ SIMPLES -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-blush-950 border-t border-roseGold-950 text-neutral-400 text-sm">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div class="space-y-1">
+                <p class="text-white font-semibold">Dra. Andreynna Vieira</p>
+                <p class="text-xs text-neutral-400">Especialista em Reabilitação Oral-IKO | Facetas | Implantes • Cirurgiã Dentista</p>
+                <p class="text-xs text-neutral-500">Av. Goiás, 404 - Centro, Goianésia - GO, 76380-100</p>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://www.whatsapp.com/send/?phone=5562986036404&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blush-900 border border-roseGold-900/40 flex items-center justify-center text-neutral-300 hover:text-roseGold-400 hover:border-roseGold-500/50 transition-colors" title="Instagram / WhatsApp">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                </a>
+                <a href="https://api.whatsapp.com/message/KN6JZHLQ73PFF1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blush-900 border border-roseGold-900/40 flex items-center justify-center text-neutral-300 hover:text-roseGold-400 hover:border-roseGold-500/50 transition-colors" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+            </div>
+
+            <div class="text-xs text-neutral-400">
+                <p>© Dra. Andreynna Vieira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-blush-950/95 hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-neutral-400 hover:text-white text-3xl p-2 z-50 focus:outline-none" onclick="closeLightbox()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="relative max-w-5xl max-h-[90vh] overflow-hidden rounded-2xl border border-roseGold-900/40 bg-blush-900 flex items-center justify-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="Imagem ampliada" class="max-w-full max-h-[85vh] object-contain">
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        function openLightbox(element) {
+            const img = element.querySelector('img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            lightboxImg.src = img.src;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.classList.add('lightbox-active');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('flex');
+            lightbox.classList.add('hidden');
+            document.body.classList.remove('lightbox-active');
+        }
+
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
